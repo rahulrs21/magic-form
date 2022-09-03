@@ -5,6 +5,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+### Deployed the app successfully in NETLIFY.
+### `[Go Live]`(https://deluxe-starlight-5ef5ad.netlify.app/) to view in your browser
 
 ### `npm start`
 
