@@ -14,6 +14,12 @@ export default function TextForm(props) {
       props.showAlert("All letters are Lowertext", "success")
   }
 
+  const handleCapitaliseClick = () => {
+      let newText = text.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ');
+      setText(newText)
+      props.showAlert("All letters are Lowertext", "success")
+  }
+
   const handleClear = () => {
     let newText = '';
     setText(newText)
@@ -50,6 +56,7 @@ export default function TextForm(props) {
           </div>
           <button className="btn btn-primary my-3 " onClick={handleUpperClick}>Uppercase</button>
           <button className="btn btn-primary my-3 mx-2" onClick={handleLowerClick}>Lowercase</button>
+          <button className="btn btn-primary my-3 mx-2" onClick={handleCapitaliseClick}>Capitalise</button>
           <button className="btn btn-primary my-3 mx-2" onClick={handleClear}>Clear</button>
           <button className="btn btn-primary my-3 mx-2" onClick={handleCopy}>{copyBtnText}</button>
       </div>
