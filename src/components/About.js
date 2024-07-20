@@ -91,7 +91,7 @@ export default function About(props) {
   const [Mode, setMode] = useState('Light Mode')
 
   const toggleButtton = () => {
-      if(myStyle.color == 'white'){
+      if(myStyle.color === 'white'){
           setMyStyle({
               color: 'black',
               backgroundColor: 'white'
