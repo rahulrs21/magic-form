@@ -32,7 +32,7 @@ function App() {
   }
   
   const toggleSwitch = () => {
-    if(mode == 'light'){
+    if(mode === 'light'){
       setMode('dark');
       setStarColor('fa-solid fa-moon text-light');
       document.body.style.backgroundColor = '#072239';
