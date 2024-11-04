@@ -52,7 +52,7 @@ function App() {
       <>
         <Router>
           <div className="App">
-            <NavBar heading="ProPixel" mode={mode} toggle={toggleSwitch}  color={starColor} />
+            <NavBar heading="MagicForm" mode={mode} toggle={toggleSwitch}  color={starColor} />
             <Alert alert={alert} />
             <Routes>
               <Route path="/about" element={<About mode={mode} />}>
